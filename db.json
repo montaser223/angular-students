@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Mohamed",
+      "age": 18,
+      "email": "m@gmail.com",
+      "city": "Ismailia"
+    },
+    {
+      "id": 2,
+      "name": "Ahmed",
+      "age": 20,
+      "email": "a@gmail.com",
+      "city": "Cairo"
+    },
+    {
+      "id": 3,
+      "name": "Mohamed Mahmoud",
+      "age": 18,
+      "email": "m@gmail.com",
+      "city": "ElSharqya"
+    },
+    {
+      "id": 4,
+      "name": "AbdelRahman",
+      "age": 38,
+      "email": "m@gmail.com",
+      "city": "Mansoura"
+    },
+    {
+      "id": 5,
+      "name": "Ahmed Mamdouh",
+      "age": 18,
+      "email": "m@gmail.com",
+      "city": "Faioum"
+    },
+    {
+      "id": 6,
+      "name": "Lena",
+      "age": 18,
+      "email": "m@gmail.com",
+      "city": "Cairo"
+    },
+    {
+      "id": 25,
+      "name": "Hamada",
+      "age": 26,
+      "city": "Ismailia",
+      "email": "H@gmail.com"
+    },
+    {
+      "name": "Hamada ElGenn",
+      "age": 26,
+      "city": "Ismailia",
+      "email": "H@gmail.com",
+      "id": 26
+    }
+  ]
+}

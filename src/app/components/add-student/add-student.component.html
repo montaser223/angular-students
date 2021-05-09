@@ -1,0 +1,47 @@
+<form [formGroup]="myForm">
+  <div class="form-group">
+    <label for=""> Name </label>
+    <input
+      class="form-control"
+      formControlName="name"
+      name="nameinput"
+      type="text"
+    />
+  </div>
+  <div
+    class="alert alert-danger"
+    *ngIf="
+      myForm.controls.name.invalid &&
+      (myForm.controls.name.dirty || myForm.controls.name.touched)
+    "
+  >
+    <div *ngIf="myForm.controls.name.errors?.required">name is required.</div>
+    <div *ngIf="myForm.controls.name.errors?.minlength">
+      name must be at least 3 characters long.
+    </div>
+  </div>
+  <div class="form-group">
+    <label for=""> Email </label>
+    <input
+      name="email"
+      class="form-control"
+      type="text"
+      formControlName="email"
+    />
+  </div>
+  <div
+    class="alert alert-danger"
+    *ngIf="
+      myForm.controls.email.invalid &&
+      (myForm.controls.email.dirty || myForm.controls.email.touched)
+    "
+  >
+    <div *ngIf="myForm.controls.email.errors?.required">email is required.</div>
+    <div *ngIf="myForm.controls.email.errors?.pattern">
+      please enter a valid email
+    </div>
+  </div>
+  <button (click)="submit(myForm)"  [disabled]="myForm.invalid" class="btn btn-success" data-bs-dismiss="modal">
+    save
+  </button>
+</form>

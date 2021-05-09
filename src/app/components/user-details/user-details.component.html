@@ -1,0 +1,19 @@
+<div *ngIf="user;else noUser" >
+    <h2 class="text-center">
+        Details of {{user.name}}
+    </h2>
+    <p [appCustom]="{bgColor:'blue',fgColor:'yellow'}">
+        Email:{{user.email}}
+    </p>
+    <p>
+        Age:{{user.age}}
+    </p>
+    <p>
+        City:{{user.city}}
+    </p>
+</div>
+<ng-template #noUser>
+    <p>
+       No User information available :D 
+    </p>
+</ng-template>
